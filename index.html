@@ -1,16 +1,128 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StartAI Apps</title>
+    <title>StartAI Apps - About Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- Genel Sayfa Stilleri --- */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0a0a1a; /* Koyu lacivert/siyah arka plan */
+            color: #e0e0e0; /* Okunabilir, hafif kırık beyaz metin */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            background-image: linear-gradient(135deg, #0a0a1a 0%, #1a1a3a 100%);
+        }
+
+        /* --- Ana İçerik Kartı --- */
+        .card {
+            background-color: rgba(30, 30, 60, 0.5); /* Yarı saydam kart arka planı */
+            border-radius: 20px;
+            padding: 40px 50px;
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* --- Logo/Marka Stili --- */
+        .brand {
+            font-size: 2.5rem; /* 40px */
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .brand span {
+            color: #00d4ff; /* Canlı mavi/turkuaz vurgu rengi */
+        }
+        
+        /* --- Slogan Stili --- */
+        .slogan {
+            font-style: italic;
+            color: #00d4ff;
+            font-weight: 300;
+            margin-bottom: 30px;
+            display: block; /* Tam genişlik kaplaması için */
+        }
+
+        /* --- Paragraf Stilleri --- */
+        .card p {
+            font-size: 1.1rem; /* 17-18px */
+            line-height: 1.8; /* Satır aralığı artırılarak okunabilirlik sağlandı */
+            color: #c0c0d0; /* Ana metin renginden biraz daha soluk */
+            text-align: left; /* Paragrafları sola hizala */
+            margin-bottom: 20px; /* Paragraflar arası boşluk */
+        }
+        
+        .card p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* --- Vurgulu Metinler --- */
+        .card strong {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        /* --- Sayfa Yüklendiğindeki Animasyon --- */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* --- Mobil Cihazlar için Ayarlamalar (Responsive Tasarım) --- */
+        @media (max-width: 600px) {
+            .card {
+                padding: 30px 25px;
+            }
+            .brand {
+                font-size: 2rem; /* Başlığı küçült */
+            }
+            .card p {
+                font-size: 1rem; /* Metni küçült */
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>**About StartAi Apps**</h1>
-    <p>At **StartAi Apps**, we believe technology should be more than just tools—it should be a companion that helps people live better. Guided by our slogan, *“Striving to make lives more meaningful and easier,”* we design mobile applications with purpose and simplicity at their core.
 
-Our focus is on creating solutions that bring real value to everyday life—whether it’s through motivation, productivity, or personal growth. Every app we release is built with care, aiming to be both easy to use and impactful for those who rely on it.
+    <div class="card">
+        <h1 class="brand">Start<span>AI</span> Apps</h1>
+        
+        <em class="slogan">“Striving to make lives more meaningful and easier”</em>
 
-We are just getting started, but our mission is clear: to combine smart design with practical innovation, making technology serve people in the best way possible.</p>
+        <p>
+            At <strong>StartAi Apps</strong>, we believe technology should be more than just tools—it should be a companion that helps people live better. Guided by our slogan, we design mobile applications with purpose and simplicity at their core.
+        </p>
+
+        <p>
+            Our focus is on creating solutions that bring real value to everyday life—whether it’s through motivation, productivity, or personal growth. Every app we release is built with care, aiming to be both easy to use and impactful for those who rely on it.
+        </p>
+
+        <p>
+            We are just getting started, but our mission is clear: to combine smart design with practical innovation, making technology serve people in the best way possible.
+        </p>
+    </div>
+
 </body>
 </html>
+
